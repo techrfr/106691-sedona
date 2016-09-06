@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Красильчук](https://up.htmlacademy.ru/adaptive/8/user/106691).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий Безуглый.
 
 ---
 
