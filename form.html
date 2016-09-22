@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Sedona</h1>
+      <nav class="main-nav main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav-items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a>Фото и Видео</a></li>
+            <li class="main-nav__item"><a>Форма отзыва</a></li>
+            <li class="main-nav__item"><a>HTML Academy</a></li>
+          </ul>
+          <img width="100">
+          <button class="main-nav__toggle-open" type="button">Открыть меню</button>
+        </div>
+      </nav>
+    </header>
+    <section class="feedback-title">
+      <img width="320" height="160" src="http://placehold.it/320x160">
+      <h1 class="feedback-title__title">Оставьте свой отзыв</h1>
+      <h2 class="feedback-title__text">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</h2>
+    </section>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <section class="visitor-name">
+        <h1 class="visitor-name__title">Представьтесь, пожалуйста:</h1>
+        <label class="visitor-name__f-name-label" for="first-name">Имя</label>
+        <input class="visitor-name__f-name" id="first-name" name="first-name">
+        <label class="visitor-name__s-name-label" for="second-name">Фамилия</label>
+        <input class="visitor-name__s-name" id="second-name" name="second-name">
+        <label class="visitor-name__father-name-label" for="father-name">Отчество</label>
+        <input class="visitor-name__father-name" id="father-name" name="father-name">
+      </section>
+      <section class="contacts">
+        <label class="contacts__tel-label" for="tel-num">Контактный телефон:</label>
+        <input class="contacts__tel" type="tel" id="tel-num" name="tel-num">
+        <div class="contacts__handset-icon"></div>
+        <label class="contacts__tel-error">Ошибка, перепроверьте номер</label>
+        <label class="contacts__email-label" for="email">Электронная почта</label>
+        <input class="contacts__email" type="text" id="email" name="email">
+        <div class="contacts__letter-icon"></div>
+      </section>
+      <section class="impression">
+        <h1 class="impression__title">Ваше общее впечатление:</h1>
+        <label class="impression__input-text"><input class="impression__input" type="radio" value="positive" name="impression" checked>Скорее положительное</label>
+        <label class="impression__input-text"><input class="impression__input" type="radio" value="negative" name="impression">Скорее отрицательное</label>
+        <label class="impression__input-text"><input class="impression__input" type="radio" value="neural" name="impression">Затрудняюсь ответить</label>
+      </section>
+      <section class="visited-sights">
+        <h1 class="visited-sights__title">Посещенные достопримечательности:</h1>
+        <input class="visited-sights__checkbox" type="checkbox" name="devils-bridge" checked>
+        <label class="visited-sights__checkbox-label" for="devils-bridge">Мост Дьявола</label>
+        <input class="visited-sights__checkbox" type="checkbox" name="slide-park" checked>
+        <label class="visited-sights__checkbox-label" for="slide-park">Слайд-Парк</label>
+        <input class="visited-sights__checkbox" type="checkbox" name="bell-mountain">
+        <label class="visited-sights__checkbox-label" for="bell-mountain">Гора-Колокол</label>
+        <input class="visited-sights__checkbox" type="checkbox" name="red-rocks" checked>
+        <label class="visited-sights__checkbox-label" for="red-rocks">Красные скалы</label>
+      </section>
+      <section class="emotions">
+        <h1 class="emotions__title">Опишите свои эмоции:</h1>
+        <input class="emotions__text" type="text" name="emotions__text">
+      </section>
+      <button class="button  hotel-search-button">Отправить отзыв</button>
+    </form>
+    <footer class="page-footer">
+      <h1><a>#VISITSEDONA</a></h1>
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a>
+          <a class="social link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive"></a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+
+
