@@ -6,7 +6,6 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Sedona</h1>
       <nav class="main-nav main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
@@ -16,61 +15,66 @@
             <li class="main-nav__item"><a>Форма отзыва</a></li>
             <li class="main-nav__item"><a>HTML Academy</a></li>
           </ul>
-          <img width="100">
+          <a href="#" class="main-nav__logo">
+            <img src="placehold.it/100" width="100">
+          </a>
           <button class="main-nav__toggle-open" type="button">Открыть меню</button>
         </div>
       </nav>
     </header>
-    <section class="feedback-title">
+    <section class="feedback-caption">
       <img width="320" height="160" src="http://placehold.it/320x160">
-      <h1 class="feedback-title__title">Оставьте свой отзыв</h1>
-      <h2 class="feedback-title__text">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</h2>
+      <h1 class="feedback-caption__title  form-title">Оставьте свой отзыв</h1>
+      <h2 class="feedback-caption__text  label-title">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</h2>
     </section>
-    <form action="https://echo.htmlacademy.ru" method="get">
-      <!--  Здесь fieldset. Наименование классов. Общие классы для всех элементов форм  -->
-      <section class="visitor-name">
-        <h1 class="visitor-name__title">Представьтесь, пожалуйста:</h1>
-        <label class="visitor-name__f-name-label" for="first-name">Имя</label>
-        <input class="visitor-name__f-name" id="first-name" name="first-name">
-        <label class="visitor-name__s-name-label" for="second-name">Фамилия</label>
-        <input class="visitor-name__s-name" id="second-name" name="second-name">
-        <label class="visitor-name__father-name-label" for="father-name">Отчество</label>
-        <input class="visitor-name__father-name" id="father-name" name="father-name">
-      </section>
-      <section class="contacts">
-        <label class="contacts__tel-label" for="tel-num">Контактный телефон:</label>
-        <input class="contacts__tel" type="tel" id="tel-num" name="tel-num">
-        <div class="contacts__handset-icon"></div>
-        <label class="contacts__tel-error">Ошибка, перепроверьте номер</label>
-        <label class="contacts__email-label" for="email">Электронная почта</label>
-        <input class="contacts__email" type="text" id="email" name="email">
-        <div class="contacts__letter-icon"></div>
-      </section>
-      <section class="impression">
-        <h1 class="impression__title">Ваше общее впечатление:</h1>
-        <label class="impression__input-text"><input class="impression__input" type="radio" value="positive" name="impression" checked>Скорее положительное</label>
-        <label class="impression__input-text"><input class="impression__input" type="radio" value="negative" name="impression">Скорее отрицательное</label>
-        <label class="impression__input-text"><input class="impression__input" type="radio" value="neural" name="impression">Затрудняюсь ответить</label>
-      </section>
-      <section class="visited-sights">
-        <h1 class="visited-sights__title">Посещенные достопримечательности:</h1>
-        <input class="visited-sights__checkbox" type="checkbox" name="devils-bridge" checked>
-        <label class="visited-sights__checkbox-label" for="devils-bridge">Мост Дьявола</label>
-        <input class="visited-sights__checkbox" type="checkbox" name="slide-park" checked>
-        <label class="visited-sights__checkbox-label" for="slide-park">Слайд-Парк</label>
-        <input class="visited-sights__checkbox" type="checkbox" name="bell-mountain">
-        <label class="visited-sights__checkbox-label" for="bell-mountain">Гора-Колокол</label>
-        <input class="visited-sights__checkbox" type="checkbox" name="red-rocks" checked>
-        <label class="visited-sights__checkbox-label" for="red-rocks">Красные скалы</label>
-      </section>
-      <section class="emotions">
-        <h1 class="emotions__title">Опишите свои эмоции:</h1>
-        <!--  textarea  -->
-        <input class="emotions__text" type="text" name="emotions__text">
-      </section>
-      <!-- input type=submit -->
-      <button class="button  hotel-search-button">Отправить отзыв</button>
-    </form>
+    <section class="feedback-form">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="visitor-name">
+          <h1 class="visitor-name__title  form-title">Представьтесь, пожалуйста:</h1>
+          <label class="visitor-name__f-name-label  label-title" for="first-name">Имя</label>
+          <input class="visitor-name__f-name  form-input" id="first-name" name="first-name">
+          <label class="visitor-name__s-name-label  label-title" for="second-name">Фамилия</label>
+          <input class="visitor-name__s-name  form-input" id="second-name" name="second-name">
+          <label class="visitor-name__father-name-label  label-title" for="father-name">Отчество</label>
+          <input class="visitor-name__father-name  form-input" id="father-name" name="father-name">
+        </fieldset>
+        <fieldset class="contacts">
+          <h1 class="contacts__title  form-title">Контактная информация:</h1>
+          <label class="contacts__tel-label  label-title" for="tel-num">Контактный телефон:</label>
+          <input class="contacts__tel  form-input" type="tel" id="tel-num" name="tel-num">
+          <div class="contacts__handset-icon"></div>
+          <label class="contacts__tel-error">Ошибка, перепроверьте номер</label>
+          <label class="contacts__email-label  label-title" for="email">Электронная почта</label>
+          <input class="contacts__email  form-input" type="text" id="email" name="email">
+          <div class="contacts__letter-icon"></div>
+        </fieldset>
+        <fieldset class="impression">
+          <h1 class="impression__title  form-title">Ваше общее впечатление:</h1>
+          <div class="impression__radio" name="radio1"></div>
+          <label class="impression__input-text  form-label">Скорее положительное</label>
+          <div class="impression__radio" name="radio2"></div>
+          <label class="impression__input-text  form-label">Скорее отрицательное</label>
+          <div class="impression__radio" name="radio3"></div>
+          <label class="impression__input-text  form-label">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="visited-sights">
+          <h1 class="visited-sights__title  form-title">Посещенные достопримечательности:</h1>
+          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="devils-bridge"></div>
+          <label class="visited-sights__checkbox-label  form-label" for="devils-bridge">Мост Дьявола</label>
+          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="slide-park"></div>
+          <label class="visited-sights__checkbox-label  form-label" for="slide-park">Слайд-Парк</label>
+          <div class="visited-sights__checkbox" name="bell-mountain"></div>
+          <label class="visited-sights__checkbox-label  form-label" for="bell-mountain">Гора-Колокол</label>
+          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="red-rocks"></div>
+          <label class="visited-sights__checkbox-label  form-label" for="red-rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset class="emotions">
+          <h1 class="emotions__title  form-title">Опишите свои эмоции:</h1>
+          <textarea class="emotions__text" name="emotions__text">Опишите свои эмоции</textarea>
+        </fieldset>
+        <input type="submit" class="button  hotel-search-button" value="Отправить отзыв">
+      </form>
+    </section>
     <footer class="page-footer">
       <h1><a>#VISITSEDONA</a></h1>
       <p class="page-footer__social">
