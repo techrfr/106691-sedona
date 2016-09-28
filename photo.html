@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle-close" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <a href="#" class="main-nav__logo">
+          <img src="placehold.it/100" width="100">
+        </a>
+        <button class="main-nav__toggle-open" type="button"></button>
+      </nav>
+    </header>
+    <section class="photo-preview">
+      <img width="320" height="160" src="http://placehold.it/320x160">
+      <h1 class="photo-preview__title">Фото и видео</h1>
+      <h2 class="photo-preview__text">Не можете решиться на путешествие<br>из-за курса? Фотографии помогут<br>Вам забыть о политике и экономике.</h2>
+      <figure class="photo-block">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
+        <figcaption class="photo-block__photo-title">Неродные просторы</figcaption>
+        <p class="photo-block__author">Автор фото: Борис</p>
+        <div class="photo-block__like-icon">
+          <span class="photo-block__like-count like-icon">1350</span>
+        </div>
+      </figure>
+      <figure class="photo-block">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
+        <figcaption class="photo-block__photo-title">Местная растительность</figcaption>
+        <p class="photo-block__author">Автор фото: Сергей</p>
+        <div class="photo-block__like-icon"></div>
+        <span class="photo-block__like-count">143</span>
+      </figure>
+      <figure class="photo-block">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
+        <figcaption class="photo-block__photo-title">Дорога на север</figcaption>
+        <p class="photo-block__author">Автор фото: Петр</p>
+        <div class="photo-block__like-icon"></div>
+        <span class="photo-block__like-count">96</span>
+      </figure>
+      <figure class="photo-block">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
+        <figcaption class="photo-block__photo-title">Мост Дьявола</figcaption>
+        <p class="photo-block__author">Автор фото: Антон</p>
+        <div class="photo-block__like-icon"></div>
+        <span class="photo-block__like-count">254</span>
+      </figure>
+    </section>
+    <section class="video-presentation">
+      <h1 class="video-presentation__title">Все еще сомневаетесь?</h1>
+      <h2 class="video-presentation__text">Смотрите видеопрезентацию и<br>скорее за билетами, пока они не<br>подорожали в очередной раз!</h2>
+      <video width="320" height="240" controls>
+        <source src="video/sedona.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="video/sedona.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/sedona.webm" type='video/webm; codecs="vp8, vorbis"'>
+        Тег video не поддерживается вашим браузером.
+      </video>
+    </section>
+    <footer class="page-footer">
+      <h1 class="hashtag"><a>#VISITSEDONA</a></h1>
+      <ul class="social-links">
+        <li><a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+        <li><a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a></li>
+        <li><a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a></li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive"></a>
+      </p>
+    </footer>
+  </body>
+</html>
