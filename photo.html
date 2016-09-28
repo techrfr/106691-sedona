@@ -6,32 +6,28 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav-items">
-            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a>Фото и Видео</a></li>
-            <li class="main-nav__item"><a>Форма отзыва</a></li>
-            <li class="main-nav__item"><a>HTML Academy</a></li>
-          </ul>
-          <a href="#" class="main-nav__logo">
-            <img src="placehold.it/100" width="100">
-          </a>
-          <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-        </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle-close" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <a href="#" class="main-nav__logo">
+          <img src="placehold.it/100" width="100">
+        </a>
+        <button class="main-nav__toggle-open" type="button"></button>
       </nav>
     </header>
-    <!--  Подумай по поводу наименования класса (preview) -->
-    <!-- Фото в одной секции  -->
     <section class="photo-preview">
       <img width="320" height="160" src="http://placehold.it/320x160">
       <h1 class="photo-preview__title">Фото и видео</h1>
       <h2 class="photo-preview__text">Не можете решиться на путешествие<br>из-за курса? Фотографии помогут<br>Вам забыть о политике и экономике.</h2>
-    </section>
-    <section class="photos">
       <figure class="photo-block">
-        <img width="280" height="280" src="http://placehold.it/280x280">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
         <figcaption class="photo-block__photo-title">Неродные просторы</figcaption>
         <p class="photo-block__author">Автор фото: Борис</p>
         <div class="photo-block__like-icon">
@@ -39,21 +35,27 @@
         </div>
       </figure>
       <figure class="photo-block">
-        <img width="280" height="280" src="http://placehold.it/280x280">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
         <figcaption class="photo-block__photo-title">Местная растительность</figcaption>
         <p class="photo-block__author">Автор фото: Сергей</p>
         <div class="photo-block__like-icon"></div>
         <span class="photo-block__like-count">143</span>
       </figure>
       <figure class="photo-block">
-        <img width="280" height="280" src="http://placehold.it/280x280">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
         <figcaption class="photo-block__photo-title">Дорога на север</figcaption>
         <p class="photo-block__author">Автор фото: Петр</p>
         <div class="photo-block__like-icon"></div>
         <span class="photo-block__like-count">96</span>
       </figure>
       <figure class="photo-block">
-        <img width="280" height="280" src="http://placehold.it/280x280">
+        <div class="photo-block__image">
+          <img width="280" height="280" src="http://placehold.it/280x280">
+        </div>
         <figcaption class="photo-block__photo-title">Мост Дьявола</figcaption>
         <p class="photo-block__author">Автор фото: Антон</p>
         <div class="photo-block__like-icon"></div>
@@ -71,14 +73,12 @@
       </video>
     </section>
     <footer class="page-footer">
-      <h1><a>#VISITSEDONA</a></h1>
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a>
-          <a class="social link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
-        </span>
-      </p>
+      <h1 class="hashtag"><a>#VISITSEDONA</a></h1>
+      <ul class="social-links">
+        <li><a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+        <li><a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a></li>
+        <li><a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a></li>
+      </ul>
       <p class="page-footer__copyright">
         Разработано:
         <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive"></a>

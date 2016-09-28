@@ -6,84 +6,80 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav-items">
-            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a>Фото и Видео</a></li>
-            <li class="main-nav__item"><a>Форма отзыва</a></li>
-            <li class="main-nav__item"><a>HTML Academy</a></li>
-          </ul>
-          <a href="#" class="main-nav__logo">
-            <img src="placehold.it/100" width="100">
-          </a>
-          <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-        </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle-close" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <a href="#" class="main-nav__logo">
+          <img src="placehold.it/100" width="100">
+        </a>
+        <button class="main-nav__toggle-open" type="button"></button>
       </nav>
     </header>
-    <section class="feedback-caption">
+    <section class="feedback">
       <img width="320" height="160" src="http://placehold.it/320x160">
       <h1 class="feedback-caption__title  form-title">Оставьте свой отзыв</h1>
-      <h2 class="feedback-caption__text  label-title">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</h2>
-    </section>
-    <section class="feedback-form">
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="visitor-name">
-          <h1 class="visitor-name__title  form-title">Представьтесь, пожалуйста:</h1>
-          <label class="visitor-name__f-name-label  label-title" for="first-name">Имя</label>
-          <input class="visitor-name__f-name  form-input" id="first-name" name="first-name">
-          <label class="visitor-name__s-name-label  label-title" for="second-name">Фамилия</label>
-          <input class="visitor-name__s-name  form-input" id="second-name" name="second-name">
-          <label class="visitor-name__father-name-label  label-title" for="father-name">Отчество</label>
-          <input class="visitor-name__father-name  form-input" id="father-name" name="father-name">
-        </fieldset>
-        <fieldset class="contacts">
-          <h1 class="contacts__title  form-title">Контактная информация:</h1>
-          <label class="contacts__tel-label  label-title" for="tel-num">Контактный телефон:</label>
-          <input class="contacts__tel  form-input" type="tel" id="tel-num" name="tel-num">
-          <div class="contacts__handset-icon"></div>
-          <label class="contacts__tel-error">Ошибка, перепроверьте номер</label>
-          <label class="contacts__email-label  label-title" for="email">Электронная почта</label>
-          <input class="contacts__email  form-input" type="text" id="email" name="email">
-          <div class="contacts__letter-icon"></div>
-        </fieldset>
-        <fieldset class="impression">
-          <h1 class="impression__title  form-title">Ваше общее впечатление:</h1>
-          <div class="impression__radio" name="radio1"></div>
-          <label class="impression__input-text  form-label">Скорее положительное</label>
-          <div class="impression__radio" name="radio2"></div>
-          <label class="impression__input-text  form-label">Скорее отрицательное</label>
-          <div class="impression__radio" name="radio3"></div>
-          <label class="impression__input-text  form-label">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="visited-sights">
-          <h1 class="visited-sights__title  form-title">Посещенные достопримечательности:</h1>
-          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="devils-bridge"></div>
-          <label class="visited-sights__checkbox-label  form-label" for="devils-bridge">Мост Дьявола</label>
-          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="slide-park"></div>
-          <label class="visited-sights__checkbox-label  form-label" for="slide-park">Слайд-Парк</label>
-          <div class="visited-sights__checkbox" name="bell-mountain"></div>
-          <label class="visited-sights__checkbox-label  form-label" for="bell-mountain">Гора-Колокол</label>
-          <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="red-rocks"></div>
-          <label class="visited-sights__checkbox-label  form-label" for="red-rocks">Красные скалы</label>
-        </fieldset>
-        <fieldset class="emotions">
-          <h1 class="emotions__title  form-title">Опишите свои эмоции:</h1>
-          <textarea class="emotions__text" name="emotions__text">Опишите свои эмоции</textarea>
-        </fieldset>
-        <input type="submit" class="button  hotel-search-button" value="Отправить отзыв">
-      </form>
+      <h2 class="feedback-caption__text  label-title">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+      <div class="feedback-form">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="visitor-name">
+            <legend class="visitor-name__title  form-title">Представьтесь, пожалуйста:</legend>
+            <label class="visitor-name__f-name-label  label-title" for="first-name">Имя</label>
+            <input class="visitor-name__f-name  form-input" id="first-name" name="first-name">
+            <label class="visitor-name__s-name-label  label-title" for="second-name">Фамилия</label>
+            <input class="visitor-name__s-name  form-input" id="second-name" name="second-name">
+            <label class="visitor-name__father-name-label  label-title" for="father-name">Отчество</label>
+            <input class="visitor-name__father-name  form-input" id="father-name" name="father-name">
+          </fieldset>
+          <fieldset class="contacts">
+            <legend class="contacts__title  form-title">Контактная информация:</legend>
+            <label class="contacts__tel-label  label-title" for="tel-num">Контактный телефон:</label>
+            <input class="contacts__tel  form-input" type="tel" id="tel-num" name="tel-num">
+            <div class="contacts__handset-icon"></div>
+            <label class="contacts__tel-error">Ошибка, перепроверьте номер</label>
+            <label class="contacts__email-label  label-title" for="email">Электронная почта</label>
+            <input class="contacts__email  form-input" type="text" id="email" name="email">
+            <div class="contacts__letter-icon"></div>
+          </fieldset>
+          <fieldset class="impression">
+            <legend class="impression__title  form-title">Ваше общее впечатление:</legend>
+            <div class="impression__radio" name="radio1"></div>
+            <label class="impression__input-text  form-label">Скорее положительное</label>
+            <div class="impression__radio" name="radio2"></div>
+            <label class="impression__input-text  form-label">Скорее отрицательное</label>
+            <div class="impression__radio" name="radio3"></div>
+            <label class="impression__input-text  form-label">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="visited-sights">
+            <legend class="visited-sights__title  form-title">Посещенные достопримечательности:</legend>
+            <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="devils-bridge"></div>
+            <label class="visited-sights__checkbox-label  form-label" for="devils-bridge">Мост Дьявола</label>
+            <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="slide-park"></div>
+            <label class="visited-sights__checkbox-label  form-label" for="slide-park">Слайд-Парк</label>
+            <div class="visited-sights__checkbox" name="bell-mountain"></div>
+            <label class="visited-sights__checkbox-label  form-label" for="bell-mountain">Гора-Колокол</label>
+            <div class="visited-sights__checkbox  visited-sights__checkbox--checked" name="red-rocks"></div>
+            <label class="visited-sights__checkbox-label  form-label" for="red-rocks">Красные скалы</label>
+          </fieldset>
+          <fieldset class="emotions">
+            <h1 class="emotions__title  form-title">Опишите свои эмоции:</h1>
+            <textarea class="emotions__text" name="emotions__text">Опишите свои эмоции</textarea>
+          </fieldset>
+          <input type="submit" class="button  hotel-search-button" value="Отправить отзыв">
+        </form>
+      </div>
     </section>
     <footer class="page-footer">
-      <h1><a>#VISITSEDONA</a></h1>
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a>
-          <a class="social link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
-        </span>
-      </p>
+      <h1 class="hashtag"><a>#VISITSEDONA</a></h1>
+      <ul class="social-links">
+        <li><a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+        <li><a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a></li>
+        <li><a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a></li>
+      </ul>
       <p class="page-footer__copyright">
         Разработано:
         <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive"></a>
