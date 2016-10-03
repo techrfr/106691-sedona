@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  min-width: 320px;
+  margin: 0;
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
+  margin: 0;
+  padding: 0;
+}
+.page-main {
+  margin: 0;
+}
+.google-map {
+
+  iframe {
+    width: 100%;
+  }
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  /*@media @tablet-width {
+    width: 768px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }*/
+}
+.title {
+  font-size: 16px;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.button {
+  display: block;
+  background-color: @bg-blue;
+}
+.hotel-search__button {
+  width: 280px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+  &::before {
+    display: none;
+  }
+}
+/*
+
+шрифты, альтернативные шрифты, font-family: "PT Sans", Helvetica, Arial, sans-serif;
+
+http://nicothin.pro/page/web-fonts
+object-fit
+http://caniuse.com/#search=object-fit поддержка свойств в браузерах
+
+https://developer.mozilla.org/
+
+*/

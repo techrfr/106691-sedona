@@ -1,18 +1,21 @@
 .photo-preview {
   width: 280px;
-  margin-right: auto;
-  margin-left: auto;
+margin: 0 auto;
 }
 .photo-block {
-  width: 280px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
-}
-.photo-block__like-icon {
-  height: 25px;
+  &__like-icon {
+    height: 25px;
+    padding-left: 25px;
+  }
+  &__like-icon::before {
   background: url("../img/icon-like.svg") no-repeat;
-}
-.photo-block__author {
+  }
+  &__author {
   text-transform: none;
+  }
 }
+
+/*
+
+like icon через псевдо before
+*/

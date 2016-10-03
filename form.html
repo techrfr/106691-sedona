@@ -6,11 +6,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle-close" type="button"></button>
+    <header class="page-header  container">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle-close  main-nav__toggle" type="button"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
           <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -18,10 +18,10 @@
         <a href="#" class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" width="100" height="85">
         </a>
-        <button class="main-nav__toggle-open" type="button"></button>
+        <button class="main-nav__toggle-open  main-nav__toggle" type="button"></button>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main  container">
       <section class="promo  promo-small">
         <h1 class="promo__title-big"></h1>
       </section>
@@ -79,17 +79,17 @@
               <div class="fieldset__checkbox  visited-sights__checkbox--checked" name="red-rocks"></div>
               <label class="fieldset__checkbox-label  form-input" for="red-rocks">Красные скалы</label>
             </fieldset>
-            <fieldset class="emotions">
-              <h1 class="emotions__title  title">Опишите свои эмоции:</h1>
-              <textarea class="emotions__text  text" name="emotions__text">Опишите свои эмоции</textarea>
+            <fieldset class="fieldset">
+              <legend class="fieldset__title  title">Опишите свои эмоции:</legend>
+              <textarea class="fieldset__textarea  text" name="emotions__text">Опишите свои эмоции</textarea>
             </fieldset>
             <input type="submit" class="button  hotel-search__button" value="Отправить отзыв">
           </form>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <h1 class="hashtag"><a href="#">#VISITSEDONA</a></h1>
+    <footer class="page-footer  container">
+      <a class="hashtag" href="#">#VISITSEDONA</a>
       <ul class="social-link">
         <li><a class="social-link__item  social-link__item--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
         <li><a class="social-link__item  social-link__item--fb" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a></li>
@@ -97,7 +97,9 @@
       </ul>
       <p class="page-footer__copyright">
         Разработано:
-        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive"></a>
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intenseive/adaptive">
+          <img src="../img/logo-htmlacademy.svg">
+        </a>
       </p>
     </footer>
   </body>
