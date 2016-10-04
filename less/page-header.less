@@ -13,25 +13,32 @@
     vertical-align: middle;
     color: white;
   }
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #678fa8;
+  }
+  &__item:not(:first-child) {
+    border-top: 1px solid #9ac2db;
+  }
   &__item a{
     text-decoration: none;
     color: white;
     display: block;
     padding: 20px;
     text-align: center;
+    font-weight: 800;
   }
-  &__toggle-close {
+  &__toggle {
     position: absolute;
     right: 20px;
     width: 40px;
     height: 40px;
+    border: none;
+    outline: none;
+  }
+  &__toggle-close {
     background: url("../img/icon-cross.svg") 50% 50% no-repeat;
   }
   &__toggle-open {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 20px;
     bottom: 40px;
     background: url("../img/icon-menu.svg") 50% 50% no-repeat;
   }
@@ -41,10 +48,7 @@
     display: block;
     margin: 0 auto;
   }
-  &__toggle {
-    border: none;
-    outline: none;
-  }
+
 }
 .logo-container {
   position: relative;

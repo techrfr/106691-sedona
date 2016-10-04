@@ -16,13 +16,14 @@
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
         <a href="#" class="main-nav__logo">
-          <img src="img/logo-sedona-mobile.svg" width="100" height="85">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="84">
         </a>
         <button class="main-nav__toggle-open  main-nav__toggle" type="button"></button>
       </nav>
     </header>
     <main class="page-main  container">
-      <section class="promo  promo-small">
+      <section class="promo  promo--small">
+        <img class="promo__img" src="img/bg-back-mobile@1x.jpg">
         <h1 class="promo__title-big"></h1>
       </section>
       <section class="feedback">
@@ -52,8 +53,8 @@
                 <input class="fieldset__tel  form-input" type="tel" name="tel-num">
                 <div class="fieldset__handset-icon"></div>
               </label>
-              <p class="fieldset__tel-error">Ошибка, перепроверьте номер</p>
-              <label class="fieldset__email-label  title">
+              <p class="fieldset__tel-error text">Ошибка, перепроверьте номер</p>
+              <label class="fieldset__email-label  text">
                 Электронная почта
                 <input class="fieldset__email  form-input" type="text" name="email">
                 <div class="fieldset__letter-icon"></div>
@@ -61,27 +62,41 @@
             </fieldset>
             <fieldset class="fieldset">
               <legend class="fieldset__title  title">Ваше общее впечатление:</legend>
-              <div class="fieldset__radio" name="radio1"></div>
-              <label class="fieldset__input-text  form-input">Скорее положительное</label>
-              <div class="fieldset__radio" name="radio2"></div>
-              <label class="fieldset__input-text  form-input">Скорее отрицательное</label>
-              <div class="fieldset__radio" name="radio3"></div>
-              <label class="fieldset__input-text  form-input">Затрудняюсь ответить</label>
+              <div>
+                <input class="fieldset__radio" name="impression" type="radio" value="positive" checked id="positive">
+                <label class="fieldset__input-text  form-input" for="positive">Скорее положительное</label>
+              </div>
+              <div>
+                <input class="fieldset__radio" name="impression" type="radio" value="negative" id="negative">
+                <label class="fieldset__input-text  form-input" for="negative">Скорее отрицательное</label>
+              </div>
+              <div>
+                <input class="fieldset__radio" name="impression" type="radio" value="neural" id="neural">
+                <label class="fieldset__input-text  form-input" for="neural">Затрудняюсь ответить</label>
+              </div>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="fieldset__title  title">Посещенные достопримечательности:</legend>
-              <div class="fieldset__checkbox  fieldset__checkbox--checked" name="devils-bridge"></div>
-              <label class="fieldset__checkbox-label  form-input" for="devils-bridge">Мост Дьявола</label>
-              <div class="fieldset__checkbox  visited-sights__checkbox--checked" name="slide-park"></div>
-              <label class="fieldset__checkbox-label  form-input" for="slide-park">Слайд-Парк</label>
-              <div class="fieldset__checkbox" name="bell-mountain"></div>
-              <label class="fieldset__checkbox-label  form-input" for="bell-mountain">Гора-Колокол</label>
-              <div class="fieldset__checkbox  visited-sights__checkbox--checked" name="red-rocks"></div>
-              <label class="fieldset__checkbox-label  form-input" for="red-rocks">Красные скалы</label>
+              <div>
+                <input class="fieldset__checkbox" type="checkbox" name="devils bridge" id="devils bridge">
+                <label class="fieldset__input-text  form-input" for="devils bridge">Мост Дьявола</label>
+              </div>
+              <div>
+                <input class="fieldset__checkbox" type="checkbox" name="slyde park" id="slyde park">
+                <label class="fieldset__input-text  form-input" for="slyde park">Слайд-парк</label>
+              </div>
+              <div>
+                <input class="fieldset__checkbox" type="checkbox" name="bell rock" id="bell rock">
+                <label class="fieldset__input-text  form-input" for="bell rock">Гора-Колокол</label>
+              </div>
+              <div>
+                <input class="fieldset__checkbox" type="checkbox" name="red rocks" id="red rocks">
+                <label class="fieldset__input-text  form-input" for="red rocks">Красные скалы</label>
+              </div>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="fieldset__title  title">Опишите свои эмоции:</legend>
-              <textarea class="fieldset__textarea  text" name="emotions__text">Опишите свои эмоции</textarea>
+              <textarea class="fieldset__textarea  fieldset__input-text  text" name="emotions__text">Опишите свои эмоции</textarea>
             </fieldset>
             <input type="submit" class="button  hotel-search__button" value="Отправить отзыв">
           </form>

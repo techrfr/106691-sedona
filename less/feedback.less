@@ -1,7 +1,40 @@
 .feedback {
 }
 .fieldset {
+  border: none;
   width: 280px;
   margin: 0 auto;
-
+  &__radio {
+    display: none;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__input-text {
+    text-transform: none;
+    font-weight: bold;
+  }
+  .form-input {
+    display: block;
+  }
+  .form-input:before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: @bg-grey;
+    vertical-align: middle;
+  }
+  &__radio ~ .form-input:before {
+    border-radius: 50%;
+  }
+  &__checkbox ~ .form-input:before {
+    border-radius: 5px;
+  }
+  &__radio:checked ~ .form-input:before {
+    background: green;
+  }
+  &__checkbox:checked ~ .form-input:before {
+    background: @bg-grey url("../img/icon-tick.svg") 50% 50% no-repeat;
+  }
 }
