@@ -1,14 +1,46 @@
 .page-footer {
   width: 280px;
-  padding: 0 20px;
+  padding: 20px;
   text-align: center;
+
+
+}
+.copyright {
+    padding: 10px 0;
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 .hashtag {
   color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "PT Sans Bold";
 }
-.social-link li {
-  list-style: none;
+.social-link {
+  width: 155px;
+  margin: 30px auto;
+  &__item {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+  }
+  &__item--tw {
+    /*float: left;*/
+    background: @bg-blue url(../img/icon-twitter.svg) 50% 50% no-repeat;
+  }
+  &__item--fb {
+    /*float: left;*/
+    background: @bg-blue url(../img/icon-facebook.svg) 50% 50% no-repeat;
+  }
+  &__item--youtube {
+    /*float: right;*/
+    background: @bg-blue url(../img/icon-youtube.svg) 50% 50% no-repeat;
+  }
 }
-.social-link__item {
-  text-decoration: none;
-}
+
