@@ -1,9 +1,24 @@
-.reason-feature__icon {
-  list-style: none;
-  &--housing::before {
-    background: url("../img/icon-house.svg") ;
+.reason {
+  background: @bg-blue;
+  color: white;
+  padding: 15px auto 0;
+  &__img {
+    height: 260px;
+    & img {
+      height: 260px;
+      object-fit:cover;
+    }
   }
 }
+.reason-feature{
+  &__icon {
+    list-style: none;
+    &--housing::before {
+    background: url("../img/icon-house.svg") ;
+    }
+  }
+}
+
 .reason--no-photo {
   background-color: @bg-grey;
 }
