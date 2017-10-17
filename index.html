@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle-close  main-nav__toggle" type="button"></button>
         <ul class="main-nav__list">
@@ -14,44 +15,69 @@
           <li class="main-nav__item"><a href="#">Фото и Видео</a></li>
           <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          <a href="index.html" class="main-nav__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+              <source media="(min-width: 320px)" srcset="./img/logo-sedona-mobile.svg">
+              <img alt="лого сайта" src="./img/logo-sedona-mobile.svg">
+            </picture>
+          </a>
         </ul>
-        <a href="#" class="main-nav__logo">
-          <img class="main-nav__img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="logo">
-        </a>
         <button class="main-nav__toggle-open  main-nav__toggle" type="button"></button>
       </nav>
     </header>
     <main class="page-main  container">
-      <section class="promo  box">
-        <img class="promo__img" src="img/bg-back-mobile@1x.jpg" width="320" height="390" alt="photo of rocks">
-        <!--<h2 class="promo__title-middle"></h2>
-        <h2 class="promo__title-small"></h2>
-        <h1 class="promo__title-big"></h1>
-        <h2 class="promo__title4-small promo__title4-small--white"></h2>-->
+      <section class="promo">
+        <img class="promo__img" src="img/bg-back-desktop@2x.jpg" alt="photo of rocks">
+        <svg>
+          <polygon points="50,50 100,50 100,100 50,100" fill="white"></polygon>
+        </svg>
       </section>
-      <section class="main-info  box">
+      <section class="main-info  box  flex-container">
         <h1 class="main-info__title  title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="main-info__text  text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
       </section>
-      <section class="reason  box">
-        <h2 class="reason__title  title">Настоящий городок</h2>
-        <span class="reason__num  text">-№1-</span>
-        <p class="reason__text  text">Седона не атракцион для туристов, там течет своя жизнь</p>
-        <div class="reason__img">
-          <img src="img/photo-city@1x.jpg" width="320" height="260" alt="photo-city">
+      <section class="reason">
+        <div class="box  flex-container">
+          <h2 class="reason__title  title">Настоящий городок</h2>
+          <span class="reason__num  text">-№1-</span>
+          <p class="reason__text  text">Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <ul class="reason-feature">
-          <li class="reason-feature__icon  reason-feature__icon--housing">
-            <h2 class="reason-feature__title  title">Жилье</h2>
-            <p class="reason-feature__text  text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <div class="reason__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/photo-city@1x.jpg">
+            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg">
+            <source media="(min-width: 320px)" srcset="./img/photo-city-mobile@1x.jpg">
+          </picture>
+        </div>
+        <ul class="reason-feature  flex-container">
+          <li class="reason-feature__item  flex-container">
+            <div class="reason-feature__icon  flex-container">
+              <div class="reason-feature__img">
+                <img src="img/icon-house.svg" alt="house icon">
+              </div>
+              <h2 class="reason-feature__title">Жилье</h2>
+            </div>
+            <p class="reason-feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="reason-feature__icon  reason-feature__icon--gifts">
-            <h2 class="reason-feature__title  title">Сувениры</h2>
-            <p class="reason-feature__text  text">Не только китайского, но и местного производства!</p>
+          <li class="reason-feature__item  flex-container">
+            <div class="reason-feature__icon  flex-container">
+              <div class="reason-feature__img">
+                <img src="img/icon-gift.svg" alt="house icon">
+              </div>
+              <h2 class="reason-feature__title">Сувениры</h2>
+            </div>
+            <p class="reason-feature__text">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="reason-feature__icon  reason-feature__icon--food">
-            <h2 class="reason-feature__title  title">Еда</h2>
-            <p class="reason-feature__text  text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="reason-feature__item  flex-container">
+            <div class="reason-feature__icon  flex-container">
+              <div class="reason-feature__img">
+                <img src="img/icon-burger.svg" alt="burger icon">
+              </div>
+              <h2 class="reason-feature__title">Еда</h2>
+            </div>
+            <p class="reason-feature__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </section>
@@ -78,7 +104,7 @@
         <p class="reason__num  text">-№5-</p>
         <p class="reason__text  text">Большинство едет в Гранд Каньон и толпится там</p>
       </section>
-      <section class="hotel-search  box">
+      <section class="hotel-search  box  flex-container">
         <h1 class="hotel-search__title  title">Заинтересовались?</h1>
         <p class="hotel-search__text  text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="button  hotel-search__button">Найти гостиницу</a>

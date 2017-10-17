@@ -1,17 +1,18 @@
 .promo {
   height: 390px;
   overflow: hidden;
+  @media @tablet-widths {
+    height: 520px;
+  }
 
   /*background: url("../img/bg-back-mobile@1x.jpg") 50% no-repeat;*/
-  &--small {
-    height: 160px;
-    img {
-      margin-top: -230px;
-    }
-  }
+
   &__img {
     object-fit: none;
-    height: 390px;
+    height: 100%;
   }
+}
+svg {
+  height: 100px;
 }
 
